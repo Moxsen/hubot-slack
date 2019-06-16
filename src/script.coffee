@@ -19,7 +19,7 @@ module.exports = (robot) ->
     args = res.match[1].trim().split(/\s+/)
     channel = args[0]
     unless /^#/.test(channel)
-      channel = process.env.HUBOT_ANON_TO or "#general"
+      channel = process.env.HUBOT_ANON_TO or "#skvaller"
     else
       args.shift()
     text = args.join(" ")
